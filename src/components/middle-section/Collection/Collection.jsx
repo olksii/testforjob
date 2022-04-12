@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import {getProfiles } from "../../../axios/axios";
 import ItemsContainer from "../ItemsContainer/ItemsContainer";
 import styles from './Collection.module.scss'
@@ -33,5 +34,10 @@ function Collection(props) {
         </section>
     )
 }
+
+Collection.propTypes = {
+    userCards: PropTypes.array.isRequired,
+    setUserCards: PropTypes.func.isRequired,
+  };
 
 export default Collection;

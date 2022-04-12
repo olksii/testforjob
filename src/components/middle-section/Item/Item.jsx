@@ -1,11 +1,13 @@
-import classNames from "classnames";
 import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
 import styles from './Item.module.scss'
 
 
 
 const Item = (props) => {
-    const { id, photo, name, email, position, phone } = props;
+    const { photo, name, email, position, phone } = props;
+    
 
     return (
         <div className={styles.card}>
@@ -20,5 +22,13 @@ const Item = (props) => {
         </div>
     )
 }
+
+Item.propTypes = {
+    photo: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired,
+  };
 
 export default Item;

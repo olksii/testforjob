@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, {useState } from "react";
+import PropTypes from "prop-types";
 import { Formik, Form, Field } from "formik";
 import * as yup from "yup";
 import styles from './Form.module.scss';
@@ -9,7 +10,10 @@ import classNames from "classnames";
 
 
 function FormReg(props) {
+
     const { userPositions, setUserCards } = props
+
+
     const [photoName, setPhotoName] = useState(null);
     const [photo, setPhoto] = useState(null);
     const [regError, setRegError] = useState(false);
@@ -196,12 +200,20 @@ function FormReg(props) {
                     );
                 }}
             </Formik>
-            {/* <Modal modalType='errorReg' regErrorName={regErrorName} setRegError={setRegError} /> */}
             {regError ? <Modal modalType='errorReg' regErrorName={regErrorName} setRegError={setRegError} /> : ""}
             {regSuccess ? <Modal modalType='successReg' /> : ""}
         </div>
     )
 
 }
+FormReg.defaultProps = {
+    userPositions:[],
+  };
+
+  FormReg.propTypes = {
+    userPositions: PropTypes.array,
+    setUserCards: PropTypes.func.isRequired,
+  };
+
 
 export default FormReg;

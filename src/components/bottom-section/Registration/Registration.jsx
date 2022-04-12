@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Form from "../Form/Form";
 import styles from './Registration.module.scss'
 import general from '../../../styles/general.module.scss'
@@ -14,5 +15,15 @@ function Registration (props) {
         </div>
     )
 }
+
+Registration.defaultProps = {
+    userPositions: [],
+  };
+
+Registration.propTypes = {
+    userPositions: PropTypes.array,
+    setUserCards: PropTypes.func.isRequired,
+  };
+
 
 export default Registration;

@@ -5,7 +5,7 @@ import successImg from "../../../assets/svg/success-svgrepo-com.svg"
 
 function Modal(props)  { 
 
-    const {modalType, regErrorName='', setRegError } = props
+    const {modalType, regErrorName, setRegError } = props
 
     let modalHeaderText;
     let modalMainText;
@@ -43,6 +43,15 @@ function Modal(props)  {
     
 }
 
+Modal.defaultProps = {
+    regErrorName: "",
+  };
+  
+  Modal.propTypes = {
+    regErrorName: PropTypes.string,
+    setRegError: PropTypes.func.isRequired,
+    modalType: PropTypes.string.isRequired,
+  };
 
 
 export default Modal;

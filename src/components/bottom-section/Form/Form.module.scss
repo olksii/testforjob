@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
 }
+.form{
+    @media(max-width:550px){
+        width: 90%;
+    }
+}
 .form_input{
     display: block;
     width: 380px;
@@ -10,7 +15,9 @@
     line-height: 26px;
     padding-left: 10px;
     color: #7E7E7E;
-   
+   @media (max-width:550px) {
+       width: 90%;
+   }
 }
 
 .form_input_file_block{
