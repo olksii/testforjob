@@ -1,0 +1,27 @@
+.button{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 80px;
+    color: #000000;
+    background-color: #F4E041;
+    padding: 4px 29px;
+    cursor: pointer;
+    &:hover{
+        background-color:  #FFE302
+    }
+}
+.button_showmore{
+    @extend .button;
+    margin: 0 auto;
+    padding: 4px 18px;
+    display: inline-block;
+}
+.section_header{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 50px;
+    margin-top: 140px;
+    text-align: center;
+}
