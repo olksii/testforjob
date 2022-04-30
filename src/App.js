@@ -30,10 +30,16 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="container">
-     <Header />
-     <Collection userCards={userCards} setUserCards={setUserCards} />
-     <Registration userPositions={userPositions} setUserCards={setUserCards} />
+     <div>
+        <div className='header'>
+          <Header />
+        </div>
+        <div className='main'>
+          <div className="container">
+            <Collection userCards={userCards} setUserCards={setUserCards} />
+            <Registration userPositions={userPositions} setUserCards={setUserCards} />
+          </div>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,9 @@ import classNames from "classnames";
 
 function Header() {
     return (
-        <>
+        <div>
+        <div className="header">
+            <div className="container">
             <div className={styles.hero_header}>
                 <div className={styles.hero_header_logo}>
                     <img src={logo_pic} alt="logo" />
@@ -17,7 +19,8 @@ function Header() {
                     <span className={classNames(general.button, styles.sign_up_btn)}> SignUp </span>
                 </div>
             </div>
-
+            </div>
+            </div>
             <div className={styles.hero_main_pic}>
                 <div className={styles.hero_main_pic_content}>
                     <h2 className={styles.hero_main_header_text}>Test assignment for front-end developer</h2>
@@ -25,7 +28,8 @@ function Header() {
                     <span className={classNames(general.button, styles.sign_up_btn)}> SignUp </span>
                 </div>
             </div>
-        </>
+        </div>
+        
     )
 }
 
