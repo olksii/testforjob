@@ -11,7 +11,7 @@ const Item = (props) => {
 
     return (
         <div className={styles.card}>
-            <img  className={styles.card_photo} src={photo} alt={name} />
+            <img  className={styles.card_photo} width='70px' height='70px' src={photo} alt={name} />
             <p className={classNames(styles.card_name, styles.card_text)}>{ name }</p>
             <div>
                 <p className={styles.card_text}>{position}</p>
