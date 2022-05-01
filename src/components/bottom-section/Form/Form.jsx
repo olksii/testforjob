@@ -45,7 +45,7 @@ function FormReg(props) {
         phone: yup
             .string()
             .required("Phone is required")
-            .matches(/^[\+]{0,1}380([0-9]{9})$/, "Wrong phone number"),
+            .matches(/^[\\+]{0,1}380([0-9]{9})$/, "Wrong phone number"),
     });
     const refreshUsers = () => {
         getProfiles()
