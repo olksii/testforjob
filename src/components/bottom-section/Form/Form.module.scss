@@ -53,6 +53,11 @@
     border: 1px solid #D0CFCF;
     color: #7E7E7E;
     padding: 14px 147px 14px 16px;
+
+    @media (max-width:460px) {
+        padding: 14px 95px 14px 16px;
+        
+    }
 }
 
 .form_label{
