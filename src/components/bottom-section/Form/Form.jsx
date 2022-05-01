@@ -19,7 +19,9 @@ function FormReg(props) {
     const [regError, setRegError] = useState(false);
     const [regErrorName, setRegErrorName] = useState('')
     const [regSuccess, setRegSuccess] = useState(false)
-    const emailCharacters = /^(?!\.)("([^"\r\\]|\\["\r\\])*"|([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$/
+    // const emailCharacters = /^(?!\.)("([^"\r\\]|\\["\r\\])*"|([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$/
+    const emailCharacters = /^[\+]{0,1}380([0-9]{9})$/
+
 
     const initialValues = {
         name: "",
