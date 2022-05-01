@@ -11,7 +11,7 @@ function Header() {
             <div className="container">
             <div className={styles.hero_header}>
                 <div className={styles.hero_header_logo}>
-                    <img widht='26px' height='26px' src={logo_pic} alt="logo" />
+                    <img width='26px' height='26px' src={logo_pic} alt="logo" />
                     <span className={styles.hero_header_logo_text}>testtask</span>
                 </div>
                 <div className={styles.hero_header_btns}>
